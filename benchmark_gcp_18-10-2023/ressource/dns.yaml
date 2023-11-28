@@ -1,0 +1,18 @@
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: telco-zone-dns
+  name: telco-zone-dns
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: telco.orange.com.
+    # privateVisibilityConfig:
+    #   - networks:
+    #     - networkUrlRef:
+    #         name: telco-gcp
+    privateVisibilityConfig: []
+    visibility: private

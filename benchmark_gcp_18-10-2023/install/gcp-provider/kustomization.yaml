@@ -1,0 +1,9 @@
+resources:
+- provider-gcp.yaml
+namespace: crossplane-system
+secretGenerator:
+- name: gcp-secret
+  files:
+  - gcp-credentials.json
+generatorOptions:
+  disableNameSuffixHash: true

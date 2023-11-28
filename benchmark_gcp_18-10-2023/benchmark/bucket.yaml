@@ -1,0 +1,10 @@
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: bucketbenchtwo__ID__-e48s7z46a81t45
+spec:
+  forProvider:
+    forceDestroy: true
+    location: EU
+    publicAccessPrevention: enforced
+    uniformBucketLevelAccess: true

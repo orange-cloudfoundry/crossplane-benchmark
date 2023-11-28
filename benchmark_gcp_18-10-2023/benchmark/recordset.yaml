@@ -1,0 +1,12 @@
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: RecordSet
+metadata:
+  name: benchmarknine__ID__
+spec:
+  forProvider:
+    managedZone: zone-orange
+    name: benchmarknine__ID__.telco.orange.com.
+    rrdatas:
+      - 127.0.0.1
+    ttl: 300
+    type: A

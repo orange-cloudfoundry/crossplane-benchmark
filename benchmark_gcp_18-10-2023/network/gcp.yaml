@@ -1,0 +1,70 @@
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Network
+metadata:
+  name: telco-gcp
+spec:
+  forProvider:
+    autoCreateSubnetworks: false
+---
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Subnetwork
+metadata:
+  name: telco-gcp-subnet
+spec:
+  forProvider:
+    ipCidrRange: 10.150.0.0/24
+    networkRef:
+      name: telco-gcp
+    region: europe-west1
+---
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Firewall
+metadata:
+  name: gcp-firewall-ingress
+spec:
+  forProvider:
+    direction: INGRESS
+    allow:
+    - protocol: all
+    networkRef:
+      name: telco-gcp
+    sourceRanges:
+      - 0.0.0.0/0
+---
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Firewall
+metadata:
+  name: gcp-firewall-egress
+spec:
+  forProvider:
+    direction: EGRESS
+    allow:
+    - protocol: all
+    networkRef:
+      name: telco-gcp
+    sourceRanges:
+      - 0.0.0.0/0
+---
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Router
+metadata:
+  name: gcp-router
+spec:
+  forProvider:
+    bgp:
+      - asn: 64514
+    networkRef:
+      name: telco-gcp
+    region: europe-west1
+---
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: RouterNAT
+metadata:
+  name: gcp-router-nat
+spec:
+  forProvider:
+    natIpAllocateOption: AUTO_ONLY
+    region: europe-west1
+    routerRef:
+      name: gcp-router
+    sourceSubnetworkIpRangesToNat: ALL_SUBNETWORKS_ALL_IP_RANGES

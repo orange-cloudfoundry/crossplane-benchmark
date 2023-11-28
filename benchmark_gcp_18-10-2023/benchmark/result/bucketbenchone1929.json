@@ -1,0 +1,2317 @@
+[
+  {
+    "insertId": "1bqdjvhf6frvyg",
+    "jsonPayload": {
+      "reason": "DeletedExternalResource",
+      "type": "Normal",
+      "apiVersion": "v1",
+      "involvedObject": {
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "resourceVersion": "411523",
+        "uid": "839079d2-acf8-4acb-be41-596901317afb",
+        "kind": "Bucket"
+      },
+      "kind": "Event",
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      },
+      "eventTime": null,
+      "lastTimestamp": "2023-10-20T17:00:33Z",
+      "message": "Successfully requested deletion of external resource",
+      "metadata": {
+        "namespace": "default",
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32",
+        "resourceVersion": "48881",
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        },
+        "managedFields": [
+          {
+            "manager": "provider",
+            "fieldsV1": {
+              "f:reportingComponent": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:reason": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:external-name": {}
+                }
+              },
+              "f:type": {},
+              "f:count": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:firstTimestamp": {},
+              "f:message": {}
+            },
+            "apiVersion": "v1",
+            "operation": "Update",
+            "fieldsType": "FieldsV1",
+            "time": "2023-10-20T17:00:33Z"
+          }
+        ]
+      },
+      "reportingInstance": ""
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:00:37.644026093Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:00:33Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "d3rhi4o5lubz5x6m",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "namespace_name": "crossplane-system",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.407631197Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:00:36.966844448Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:00:33Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"5m28.7007124s\"}",
+    "insertId": "ys8wfvh79pev54iq",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.408796638Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:00:36.966844448Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:00:33Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"5m28.800611647s\"}",
+    "insertId": "p42rdrmth1uvj0ev",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.408834441Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:00:36.966844448Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:00:33Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"413206\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "czmn5eu5mfd6hy8v",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.408847459Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:00:36.966844448Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:00:33Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"413206\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "zfny6ocquqboz9iw",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.409052179Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:00:36.966844448Z"
+  },
+  {
+    "insertId": "byskcppyj8mmipj3",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"7.477929ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"2f22c376-a218-4162-9186-441dcd94e30a\" srcIP=\"10.83.0.16:47988\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"7.104765ms\" resp=200",
+      "pid": "11"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_name": "apiserver",
+        "location": "europe-west1",
+        "component_location": "europe-west1-b"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.417984Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:00:35.233212535Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "5a57f511-4be2-478e-8ee0-dd30058b94ad",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.421664Z",
+    "labels": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\""
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "5a57f511-4be2-478e-8ee0-dd30058b94ad",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:00:50.255829874Z"
+  },
+  {
+    "insertId": "beg2ijzogbawoduu",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"12.059634ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"5a57f511-4be2-478e-8ee0-dd30058b94ad\" srcIP=\"10.83.0.16:47988\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"11.679772ms\" resp=200",
+      "pid": "11"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_name": "apiserver",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "component_location": "europe-west1-b"
+      }
+    },
+    "timestamp": "2023-10-20T17:00:33.421745Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:00:35.233212535Z"
+  },
+  {
+    "insertId": "1kc2bx1fmbt65v",
+    "jsonPayload": {
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "type": "Normal",
+      "reason": "DeletedExternalResource",
+      "message": "Successfully requested deletion of external resource",
+      "eventTime": null,
+      "involvedObject": {
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "resourceVersion": "411523",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "kind": "Bucket",
+        "uid": "839079d2-acf8-4acb-be41-596901317afb"
+      },
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      },
+      "kind": "Event",
+      "metadata": {
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "managedFields": [
+          {
+            "manager": "provider",
+            "fieldsType": "FieldsV1",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-10-20T17:05:01Z",
+            "fieldsV1": {
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:firstTimestamp": {},
+              "f:count": {},
+              "f:reason": {},
+              "f:involvedObject": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:external-name": {}
+                }
+              },
+              "f:type": {},
+              "f:message": {},
+              "f:lastTimestamp": {}
+            }
+          }
+        ],
+        "resourceVersion": "51007",
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "namespace": "default",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32",
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        }
+      },
+      "reportingInstance": "",
+      "apiVersion": "v1",
+      "lastTimestamp": "2023-10-20T17:05:01Z"
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:05:04.341280736Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:05:01Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "waivf8ok4a8sm41b",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.107551040Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:05:01.966246656Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:05:01Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"7m42.10027328s\"}",
+    "insertId": "4duzk4kfsmpt35hr",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.109836401Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:05:01.966246656Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:05:01Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"7m42.200122428s\"}",
+    "insertId": "4q71lch4962jmps6",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system",
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.110139149Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:05:01.966246656Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:05:01Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"413206\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "m7aplatzx163y9sa",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "namespace_name": "crossplane-system",
+        "container_name": "provider-gcp-storage",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.110148106Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:05:01.966246656Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:05:01Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"413206\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "tb44j5acllij0897",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.110176930Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:05:01.966246656Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "a0a09439-e151-49e9-8950-819c08a77f0c",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.119815Z",
+    "labels": {
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\"",
+      "authorization.k8s.io/decision": "allow"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "a0a09439-e151-49e9-8950-819c08a77f0c",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:05:02.223842158Z"
+  },
+  {
+    "insertId": "iq58wf6gzr2yuvk5",
+    "jsonPayload": {
+      "pid": "14",
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"9.746191ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"a0a09439-e151-49e9-8950-819c08a77f0c\" srcIP=\"10.83.0.16:33040\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"9.250397ms\" resp=200"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "component_name": "apiserver",
+        "component_location": "europe-west1-d",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.119928Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:05:02.275259824Z"
+  },
+  {
+    "insertId": "mhk97xla47wdz8h8",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"10.987013ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"568303af-86ac-427c-ba45-c943ab535f92\" srcIP=\"10.83.0.16:33040\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"10.445166ms\" resp=200",
+      "pid": "14"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_location": "europe-west1-d",
+        "component_name": "apiserver",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:05:01.121232Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:05:02.275259824Z"
+  },
+  {
+    "insertId": "of57jgficyk1u",
+    "jsonPayload": {
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "eventTime": null,
+      "metadata": {
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "managedFields": [
+          {
+            "apiVersion": "v1",
+            "fieldsType": "FieldsV1",
+            "time": "2023-10-20T17:08:44Z",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:external-name": {}
+                }
+              },
+              "f:lastTimestamp": {},
+              "f:count": {},
+              "f:type": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:reason": {},
+              "f:message": {},
+              "f:firstTimestamp": {},
+              "f:reportingComponent": {},
+              "f:involvedObject": {}
+            },
+            "operation": "Update",
+            "manager": "provider"
+          }
+        ],
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        },
+        "resourceVersion": "53023",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32",
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "namespace": "default"
+      },
+      "lastTimestamp": "2023-10-20T17:08:44Z",
+      "involvedObject": {
+        "kind": "Bucket",
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "resourceVersion": "411523",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "uid": "839079d2-acf8-4acb-be41-596901317afb"
+      },
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      },
+      "message": "Successfully requested deletion of external resource",
+      "reportingInstance": "",
+      "reason": "DeletedExternalResource",
+      "kind": "Event",
+      "apiVersion": "v1",
+      "type": "Normal"
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:08:47.344633229Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:08:44Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "d1u13o8j0rtxfbrv",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.307692631Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:08:46.973149805Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:08:44Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"10m16.90046799s\"}",
+    "insertId": "eghbhnecaxh1kbxy",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.309585941Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:08:46.973149805Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:08:44Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"10m17.000407586s\"}",
+    "insertId": "d0t3vst2sdrynhxk",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.309596622Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:08:46.973149805Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:08:44Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"413206\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "825fum27zkexcxxc",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.309601939Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:08:46.973149805Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:08:44Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"413206\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "ob3ynmueyoowy3t1",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "namespace_name": "crossplane-system",
+        "container_name": "provider-gcp-storage",
+        "location": "europe-west1",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.309615567Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:08:46.973149805Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "98c29449-577a-42e6-85eb-c3501118a678",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.320577Z",
+    "labels": {
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\"",
+      "authorization.k8s.io/decision": "allow"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "98c29449-577a-42e6-85eb-c3501118a678",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:08:45.793538466Z"
+  },
+  {
+    "insertId": "cqrh6sd8xq6b9ayr",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"10.878793ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"98c29449-577a-42e6-85eb-c3501118a678\" srcIP=\"10.83.0.16:59670\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"10.3025ms\" resp=200",
+      "pid": "13"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_location": "europe-west1-c",
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "component_name": "apiserver"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.320720Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:08:47.026561429Z"
+  },
+  {
+    "insertId": "n6gvfh3sov3n63us",
+    "jsonPayload": {
+      "pid": "13",
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"10.111329ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"ee8685f4-5fd8-485d-b5da-ac9f0ecfb54e\" srcIP=\"10.83.0.16:59670\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"9.779446ms\" resp=200"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_name": "apiserver",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_location": "europe-west1-c",
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:08:44.320729Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:08:47.026561429Z"
+  },
+  {
+    "insertId": "1vphoxof6dliuz",
+    "jsonPayload": {
+      "lastTimestamp": "2023-10-20T17:12:20Z",
+      "type": "Normal",
+      "reason": "DeletedExternalResource",
+      "kind": "Event",
+      "eventTime": null,
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "metadata": {
+        "namespace": "default",
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "resourceVersion": "54919",
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32",
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        },
+        "managedFields": [
+          {
+            "manager": "provider",
+            "time": "2023-10-20T17:12:21Z",
+            "fieldsV1": {
+              "f:count": {},
+              "f:reportingComponent": {},
+              "f:involvedObject": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {},
+              "f:reason": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:firstTimestamp": {},
+              "f:metadata": {
+                "f:annotations": {
+                  "f:external-name": {},
+                  ".": {}
+                }
+              }
+            },
+            "apiVersion": "v1",
+            "fieldsType": "FieldsV1",
+            "operation": "Update"
+          }
+        ]
+      },
+      "involvedObject": {
+        "resourceVersion": "411523",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "kind": "Bucket",
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "uid": "839079d2-acf8-4acb-be41-596901317afb"
+      },
+      "reportingInstance": "",
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      },
+      "message": "Successfully requested deletion of external resource",
+      "apiVersion": "v1"
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:12:22.539999110Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:12:20Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "2qg7eswxzaagt7z3",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.379937930Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:12:22.058843138Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:12:20Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"12m36.628077793s\"}",
+    "insertId": "qe8u5d0vx5g8uwpf",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage",
+        "namespace_name": "crossplane-system",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.381341600Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:12:22.058843138Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:12:20Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"12m36.727819334s\"}",
+    "insertId": "flr3akubby1ji7d9",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.381711364Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:12:22.058843138Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:12:20Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"413206\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "hawca05b0mxldjt5",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.382645984Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:12:22.058843138Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:12:20Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"413206\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "azgy98fawjuqa4nv",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.382797900Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:12:22.058843138Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "2aa6f06f-0294-476f-8d4f-c6261beda9d8",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.518997Z",
+    "labels": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\""
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "2aa6f06f-0294-476f-8d4f-c6261beda9d8",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:12:21.925675110Z"
+  },
+  {
+    "insertId": "e1ei53it7cq49b7g",
+    "jsonPayload": {
+      "pid": "14",
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"10.764995ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"2aa6f06f-0294-476f-8d4f-c6261beda9d8\" srcIP=\"10.83.0.16:48262\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"10.368862ms\" resp=200"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_name": "apiserver",
+        "cluster_name": "autopilot-crossplane",
+        "component_location": "europe-west1-d",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:20.519162Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:12:22.389161667Z"
+  },
+  {
+    "insertId": "5nmeskjz8gvo7rll",
+    "jsonPayload": {
+      "pid": "14",
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"10.367294ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"6b880e89-6b9e-45a1-92c0-b25fc956e54e\" srcIP=\"10.83.0.16:48262\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"9.756108ms\" resp=200"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "component_name": "apiserver",
+        "cluster_name": "autopilot-crossplane",
+        "component_location": "europe-west1-d"
+      }
+    },
+    "timestamp": "2023-10-20T17:12:21.761396Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:12:22.389161667Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:36Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "jaou6duq8lslpptp",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:36.397638271Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:37.049272112Z"
+  },
+  {
+    "insertId": "pt2qmyf2k5tbu",
+    "jsonPayload": {
+      "eventTime": null,
+      "involvedObject": {
+        "uid": "839079d2-acf8-4acb-be41-596901317afb",
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "kind": "Bucket",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "resourceVersion": "411523"
+      },
+      "metadata": {
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        },
+        "namespace": "default",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32",
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "resourceVersion": "56659",
+        "managedFields": [
+          {
+            "fieldsV1": {
+              "f:type": {},
+              "f:reason": {},
+              "f:message": {},
+              "f:reportingComponent": {},
+              "f:involvedObject": {},
+              "f:firstTimestamp": {},
+              "f:lastTimestamp": {},
+              "f:count": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:external-name": {}
+                }
+              }
+            },
+            "manager": "provider",
+            "time": "2023-10-20T17:15:40Z",
+            "apiVersion": "v1",
+            "fieldsType": "FieldsV1",
+            "operation": "Update"
+          }
+        ]
+      },
+      "message": "Successfully requested deletion of external resource",
+      "kind": "Event",
+      "reportingInstance": "",
+      "lastTimestamp": "2023-10-20T17:15:40Z",
+      "type": "Normal",
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "apiVersion": "v1",
+      "reason": "DeletedExternalResource",
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      }
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:15:41.352004899Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com",
+        "serviceAccountKeyName": "//iam.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/serviceAccounts/crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com/keys/37f7ab319b3bb1d3c65acbd65ad708b512c75181"
+      },
+      "requestMetadata": {
+        "callerIp": "10.0.0.10",
+        "callerSuppliedUserAgent": "google-api-go-client/0.5 Terraform/1.5.5 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.77.0 upbound-provider-gcp/v0.37.0,gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2023-10-20T17:15:40.704201208Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.buckets.get",
+      "authorizationInfo": [
+        {
+          "resource": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+          "permission": "storage.buckets.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+      "resourceLocation": {
+        "currentLocations": [
+          "eu"
+        ]
+      }
+    },
+    "insertId": "crtakeeb5hhb",
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": {
+        "bucket_name": "bucketbenchone1929-e48s7z46a81t45",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "eu"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.694618949Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2023-10-20T17:15:41.211224323Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:40Z\tDEBUG\tprovider-gcp\trefresh ended\t{\"workspace\": \"/tmp/839079d2-acf8-4acb-be41-596901317afb\", \"out\": \"{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Terraform 1.5.5\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:36.580177Z\\\",\\\"terraform\\\":\\\"1.5.5\\\",\\\"type\\\":\\\"version\\\",\\\"ui\\\":\\\"1.1\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Refreshing state... [id=REDACTED/bucketbenchone1929-e48s7z46a81t45]\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.554287Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"id_key\\\":\\\"id\\\",\\\"id_value\\\":\\\"REDACTED/bucketbenchone1929-e48s7z46a81t45\\\"},\\\"type\\\":\\\"refresh_start\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Refresh complete [id=bucketbenchone1929-e48s7z46a81t45]\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.748869Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"id_key\\\":\\\"id\\\",\\\"id_value\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\"},\\\"type\\\":\\\"refresh_complete\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Drift detected (update)\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.750551Z\\\",\\\"change\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"action\\\":\\\"update\\\"},\\\"type\\\":\\\"resource_drift\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Plan: 0 to add, 0 to change, 0 to destroy.\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.750651Z\\\",\\\"changes\\\":{\\\"add\\\":0,\\\"change\\\":0,\\\"import\\\":0,\\\"remove\\\":0,\\\"operation\\\":\\\"plan\\\"},\\\"type\\\":\\\"change_summary\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Apply complete! Resources: 0 added, 0 changed, 0 destroyed.\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.778469Z\\\",\\\"changes\\\":{\\\"add\\\":0,\\\"change\\\":0,\\\"import\\\":0,\\\"remove\\\":0,\\\"operation\\\":\\\"apply\\\"},\\\"type\\\":\\\"change_summary\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Outputs: 0\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:40.778655Z\\\",\\\"outputs\\\":{},\\\"type\\\":\\\"outputs\\\"}\\n\"}",
+    "insertId": "ay99nwoov4kacdyh",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "namespace_name": "crossplane-system",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.796663843Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:42.034727314Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:40Z\tDEBUG\tprovider-gcp\tResource is marked as available.\t{\"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\"}",
+    "insertId": "nyaywunujrc8cp27",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.796950221Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:42.034727314Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:40Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"status\", \"when\": \"5ms\"}",
+    "insertId": "k0qb8h7mzhisslfb",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system",
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.797204795Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:42.034727314Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:40Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"413206\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "dhh3ftgcftvnix4u",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.797698718Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:42.034727314Z"
+  },
+  {
+    "insertId": "5wrbphgmoceox0zl",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"15.162499ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"45164bb2-ea6d-495d-97b1-8faf64a4771a\" srcIP=\"10.83.0.16:52864\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"14.793068ms\" resp=200",
+      "pid": "13"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_location": "europe-west1-c",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_name": "apiserver"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.814786Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:15:42.010686489Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "3191acbe-13f4-4e5c-aff2-3a50abfbfa08",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.816539Z",
+    "labels": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\""
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "3191acbe-13f4-4e5c-aff2-3a50abfbfa08",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:15:42.397728841Z"
+  },
+  {
+    "insertId": "dq5d0hdd76kgwsok",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"17.892893ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"3191acbe-13f4-4e5c-aff2-3a50abfbfa08\" srcIP=\"10.83.0.16:52864\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"17.190314ms\" resp=200",
+      "pid": "13"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_name": "apiserver",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_location": "europe-west1-c",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.816676Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:15:42.010686489Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:40Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"413206\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "buci4v6ht4zvqkbv",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "container_name": "provider-gcp-storage",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:40.844233411Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:42.034727314Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com",
+        "serviceAccountKeyName": "//iam.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/serviceAccounts/crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com/keys/37f7ab319b3bb1d3c65acbd65ad708b512c75181"
+      },
+      "requestMetadata": {
+        "callerIp": "10.0.0.10",
+        "callerSuppliedUserAgent": "google-api-go-client/0.5 Terraform/1.5.5 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.77.0 upbound-provider-gcp/v0.37.0,gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2023-10-20T17:15:44.915705042Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.buckets.get",
+      "authorizationInfo": [
+        {
+          "resource": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+          "permission": "storage.buckets.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+      "resourceLocation": {
+        "currentLocations": [
+          "eu"
+        ]
+      }
+    },
+    "insertId": "14iw7f4e74jad",
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": {
+        "location": "eu",
+        "bucket_name": "bucketbenchone1929-e48s7z46a81t45",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:44.907832504Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2023-10-20T17:15:45.725704441Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com",
+        "serviceAccountKeyName": "//iam.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/serviceAccounts/crossplane@sbx-31371-t559vlz35eulkvmklkin.iam.gserviceaccount.com/keys/37f7ab319b3bb1d3c65acbd65ad708b512c75181"
+      },
+      "requestMetadata": {
+        "callerIp": "10.0.0.10",
+        "callerSuppliedUserAgent": "google-api-go-client/0.5 Terraform/1.5.5 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.77.0 upbound-provider-gcp/v0.37.0,gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sbx-31371-t559vlz35eulkvmklkin/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2023-10-20T17:15:47.546399836Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.buckets.delete",
+      "authorizationInfo": [
+        {
+          "resource": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+          "permission": "storage.buckets.delete",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/_/buckets/bucketbenchone1929-e48s7z46a81t45",
+      "resourceLocation": {
+        "currentLocations": [
+          "eu"
+        ]
+      }
+    },
+    "insertId": "oyzonmea4t7d",
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "eu",
+        "bucket_name": "bucketbenchone1929-e48s7z46a81t45"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:47.536757288Z",
+    "severity": "NOTICE",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-20T17:15:49.568722571Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "165add63-b717-42a6-b3b1-f7bcd9f8d305",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:48.216336Z",
+    "labels": {
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\"",
+      "authorization.k8s.io/decision": "allow"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "165add63-b717-42a6-b3b1-f7bcd9f8d305",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:15:51.066605387Z"
+  },
+  {
+    "insertId": "9xkvi6jhm5ycenyj",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"8.120924ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"165add63-b717-42a6-b3b1-f7bcd9f8d305\" srcIP=\"10.83.0.16:52864\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"7.607861ms\" resp=200",
+      "pid": "13"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_location": "europe-west1-c",
+        "component_name": "apiserver"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:48.216489Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:15:52.028361359Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:15:48Z\tDEBUG\tprovider-gcp\tdestroy async ended\t{\"workspace\": \"/tmp/839079d2-acf8-4acb-be41-596901317afb\", \"out\": \"{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Terraform 1.5.5\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:41.102290Z\\\",\\\"terraform\\\":\\\"1.5.5\\\",\\\"type\\\":\\\"version\\\",\\\"ui\\\":\\\"1.1\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Refreshing state... [id=bucketbenchone1929-e48s7z46a81t45]\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:44.796698Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"id_key\\\":\\\"id\\\",\\\"id_value\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\"},\\\"type\\\":\\\"refresh_start\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Refresh complete [id=bucketbenchone1929-e48s7z46a81t45]\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:44.952753Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"id_key\\\":\\\"id\\\",\\\"id_value\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\"},\\\"type\\\":\\\"refresh_complete\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Plan to delete\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:46.071218Z\\\",\\\"change\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"action\\\":\\\"delete\\\"},\\\"type\\\":\\\"planned_change\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Plan: 0 to add, 0 to change, 1 to destroy.\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:46.071547Z\\\",\\\"changes\\\":{\\\"add\\\":0,\\\"change\\\":0,\\\"import\\\":0,\\\"remove\\\":1,\\\"operation\\\":\\\"plan\\\"},\\\"type\\\":\\\"change_summary\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Destroying... [id=bucketbenchone1929-e48s7z46a81t45]\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:47.255190Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"action\\\":\\\"delete\\\",\\\"id_key\\\":\\\"id\\\",\\\"id_value\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\"},\\\"type\\\":\\\"apply_start\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45: Destruction complete after 1s\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:48.143280Z\\\",\\\"hook\\\":{\\\"resource\\\":{\\\"addr\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"module\\\":\\\"\\\",\\\"resource\\\":\\\"google_storage_bucket.bucketbenchone1929-e48s7z46a81t45\\\",\\\"implied_provider\\\":\\\"google\\\",\\\"resource_type\\\":\\\"google_storage_bucket\\\",\\\"resource_name\\\":\\\"bucketbenchone1929-e48s7z46a81t45\\\",\\\"resource_key\\\":null},\\\"action\\\":\\\"delete\\\",\\\"elapsed_seconds\\\":1},\\\"type\\\":\\\"apply_complete\\\"}\\n{\\\"@level\\\":\\\"info\\\",\\\"@message\\\":\\\"Destroy complete! Resources: 1 destroyed.\\\",\\\"@module\\\":\\\"terraform.ui\\\",\\\"@timestamp\\\":\\\"2023-10-20T17:15:48.192551Z\\\",\\\"changes\\\":{\\\"add\\\":0,\\\"change\\\":0,\\\"import\\\":0,\\\"remove\\\":1,\\\"operation\\\":\\\"destroy\\\"},\\\"type\\\":\\\"change_summary\\\"}\\n\"}",
+    "insertId": "2g5nvsgoers1aju4",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage",
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:15:48.223275952Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:15:52.118144315Z"
+  },
+  {
+    "insertId": "1ac6qhpf6ovrdc",
+    "jsonPayload": {
+      "apiVersion": "v1",
+      "reportingInstance": "",
+      "source": {
+        "component": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket"
+      },
+      "lastTimestamp": "2023-10-20T17:18:47Z",
+      "metadata": {
+        "creationTimestamp": "2023-10-20T16:56:00Z",
+        "namespace": "default",
+        "annotations": {
+          "external-name": "bucketbenchone1929-e48s7z46a81t45"
+        },
+        "managedFields": [
+          {
+            "time": "2023-10-20T17:18:49Z",
+            "fieldsV1": {
+              "f:firstTimestamp": {},
+              "f:reason": {},
+              "f:lastTimestamp": {},
+              "f:involvedObject": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:external-name": {}
+                }
+              },
+              "f:message": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:count": {},
+              "f:reportingComponent": {},
+              "f:type": {}
+            },
+            "fieldsType": "FieldsV1",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "manager": "provider"
+          }
+        ],
+        "resourceVersion": "58264",
+        "uid": "9be89771-df77-42b0-8a09-7371d214e125",
+        "name": "bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32"
+      },
+      "kind": "Event",
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "managed/storage.gcp.upbound.io/v1beta1, kind=bucket",
+      "involvedObject": {
+        "kind": "Bucket",
+        "uid": "839079d2-acf8-4acb-be41-596901317afb",
+        "apiVersion": "storage.gcp.upbound.io/v1beta1",
+        "name": "bucketbenchone1929-e48s7z46a81t45",
+        "resourceVersion": "411523"
+      },
+      "message": "Successfully requested deletion of external resource",
+      "reason": "DeletedExternalResource"
+    },
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/events",
+    "receiveTimestamp": "2023-10-20T17:18:49.489275642Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:18:47Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "ee91izkkt843et0u",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.649046232Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:18:52.025518220Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:18:47Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"16m49.458699331s\"}",
+    "insertId": "pxyuss10agpwk3z6",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.650714123Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pod-template-hash": "67b55d8d"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:18:52.025518220Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:18:47Z\tDEBUG\tprovider-gcp\tReconcile request has been requeued.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"rateLimiterName\": \"scheduler\", \"when\": \"16m49.558309445s\"}",
+    "insertId": "e1p26fpzkit4uek2",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.651121422Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:18:52.025518220Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:18:47Z\tDEBUG\tprovider-gcp\tSuccessfully requested deletion of external resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"432095\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "5qfxtj7wxyc7geyi",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.651286789Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:18:52.025518220Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:18:47Z\tDEBUG\tevents\tSuccessfully requested deletion of external resource\t{\"type\": \"Normal\", \"object\": {\"kind\":\"Bucket\",\"name\":\"bucketbenchone1929-e48s7z46a81t45\",\"uid\":\"839079d2-acf8-4acb-be41-596901317afb\",\"apiVersion\":\"storage.gcp.upbound.io/v1beta1\",\"resourceVersion\":\"432095\"}, \"reason\": \"DeletedExternalResource\"}",
+    "insertId": "hwhkr8nncs8805r6",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.651692901Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:18:52.025518220Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.status.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "4a8360f9-94b8-4321-842a-e787a3b9b668",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.756774Z",
+    "labels": {
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\"",
+      "authorization.k8s.io/decision": "allow"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "4a8360f9-94b8-4321-842a-e787a3b9b668",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:18:48.702796231Z"
+  },
+  {
+    "insertId": "o2928cmxxg91xfdd",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45/status\" latency=\"8.743138ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"4a8360f9-94b8-4321-842a-e787a3b9b668\" srcIP=\"10.83.0.16:36346\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"8.269663ms\" resp=200",
+      "pid": "13"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_location": "europe-west1-c",
+        "cluster_name": "autopilot-crossplane",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "component_name": "apiserver"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:47.756858Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:18:52.053111989Z"
+  },
+  {
+    "insertId": "ntp0eiwq5uga75oq",
+    "jsonPayload": {
+      "pid": "13",
+      "message": "\"HTTP\" verb=\"PATCH\" URI=\"/api/v1/namespaces/default/events/bucketbenchone1929-e48s7z46a81t45.178fdf2b16cb8e32\" latency=\"9.027665ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"b03f7eab-423d-42bd-9443-946ff3d5c6b1\" srcIP=\"10.83.0.16:41442\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"8.602474ms\" resp=200"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "component_name": "apiserver",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "cluster_name": "autopilot-crossplane",
+        "component_location": "europe-west1-c",
+        "location": "europe-west1"
+      }
+    },
+    "timestamp": "2023-10-20T17:18:49.386160Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:18:52.053111989Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:21:53Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "f7ojc5k4ovksgdjx",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "cluster_name": "autopilot-crossplane",
+        "container_name": "provider-gcp-storage",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:21:53.371370679Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:21:57.021989834Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "system:serviceaccount:crossplane-system:provider-gcp-storage-783d8e05c77b"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.update",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.update",
+      "requestMetadata": {
+        "callerIp": "10.83.0.16",
+        "callerSuppliedUserAgent": "provider/v0.0.0 (linux/amd64) kubernetes/$Format"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 0
+      }
+    },
+    "insertId": "0977042f-44a5-47a1-b446-856e41d893d7",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:21:56.209246Z",
+    "labels": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" of ClusterRole \"crossplane:provider:provider-gcp-storage-783d8e05c77b:system\" to ServiceAccount \"provider-gcp-storage-783d8e05c77b/crossplane-system\""
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "0977042f-44a5-47a1-b446-856e41d893d7",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:21:57.226305313Z"
+  },
+  {
+    "insertId": "c8o4fznz1ufqraw2",
+    "jsonPayload": {
+      "message": "\"HTTP\" verb=\"PUT\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45\" latency=\"13.375226ms\" userAgent=\"provider/v0.0.0 (linux/amd64) kubernetes/$Format\" audit-ID=\"0977042f-44a5-47a1-b446-856e41d893d7\" srcIP=\"10.83.0.16:50606\" apf_pl=\"workload-low\" apf_fs=\"service-accounts\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"12.805651ms\" resp=200",
+      "pid": "14"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "component_name": "apiserver",
+        "component_location": "europe-west1-d",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:21:56.209418Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:21:57.238087723Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:21:56Z\tDEBUG\tprovider-gcp\tSuccessfully deleted managed resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"uid\": \"839079d2-acf8-4acb-be41-596901317afb\", \"version\": \"432095\", \"external-name\": \"bucketbenchone1929-e48s7z46a81t45\", \"deletion-timestamp\": \"2023-10-20 16:55:06 +0000 UTC\"}",
+    "insertId": "lo0dedh8ihekgihg",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:21:56.243456014Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:21:57.021989834Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:21:56Z\tDEBUG\tprovider-gcp\tCalling the inner handler for Delete event.\t{\"gvk\": \"storage.gcp.upbound.io/v1beta1, Kind=Bucket\", \"name\": \"bucketbenchone1929-e48s7z46a81t45\", \"queueLength\": 216}",
+    "insertId": "v6v3shv4bfn5jqfc",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "namespace_name": "crossplane-system",
+        "cluster_name": "autopilot-crossplane",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "container_name": "provider-gcp-storage"
+      }
+    },
+    "timestamp": "2023-10-20T17:21:56.244167762Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:21:57.021989834Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:24:17Z\tDEBUG\tprovider-gcp\tReconciling\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}}",
+    "insertId": "kzsdmg65mnbnww7d",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "location": "europe-west1",
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:24:17.908273280Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:24:21.953805462Z"
+  },
+  {
+    "textPayload": "2023-10-20T17:24:17Z\tDEBUG\tprovider-gcp\tCannot get managed resource\t{\"controller\": \"managed/storage.gcp.upbound.io/v1beta1, kind=bucket\", \"request\": {\"name\":\"bucketbenchone1929-e48s7z46a81t45\"}, \"error\": \"Bucket.storage.gcp.upbound.io \\\"bucketbenchone1929-e48s7z46a81t45\\\" not found\"}",
+    "insertId": "3d50x2adn5c423mn",
+    "resource": {
+      "type": "k8s_container",
+      "labels": {
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "pod_name": "provider-gcp-storage-783d8e05c77b-67b55d8d-scpqs",
+        "container_name": "provider-gcp-storage",
+        "cluster_name": "autopilot-crossplane",
+        "namespace_name": "crossplane-system"
+      }
+    },
+    "timestamp": "2023-10-20T17:24:17.908327463Z",
+    "severity": "ERROR",
+    "labels": {
+      "k8s-pod/pkg_crossplane_io/revision": "provider-gcp-storage-783d8e05c77b",
+      "k8s-pod/pod-template-hash": "67b55d8d",
+      "compute.googleapis.com/resource_name": "gk3-autopilot-crossplane-pool-3-c21613a6-664c",
+      "k8s-pod/pkg_crossplane_io/provider": "provider-gcp-storage"
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/stderr",
+    "receiveTimestamp": "2023-10-20T17:24:21.953805462Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "elliott.yost-1697730950931@sandbox.cloud.orange"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "io.upbound.gcp.storage.v1beta1.buckets.get",
+          "resource": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45"
+        }
+      ],
+      "methodName": "io.upbound.gcp.storage.v1beta1.buckets.get",
+      "requestMetadata": {
+        "callerIp": "80.12.102.169",
+        "callerSuppliedUserAgent": "kubectl/v1.28.1 (linux/amd64) kubernetes/8dc49c4"
+      },
+      "resourceName": "storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45",
+      "serviceName": "k8s.io",
+      "status": {
+        "code": 5,
+        "message": "buckets.storage.gcp.upbound.io \"bucketbenchone1929-e48s7z46a81t45\" not found"
+      }
+    },
+    "insertId": "b350008e-decb-40ee-99bd-435e44c26cab",
+    "resource": {
+      "type": "k8s_cluster",
+      "labels": {
+        "cluster_name": "autopilot-crossplane",
+        "location": "europe-west1",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin"
+      }
+    },
+    "timestamp": "2023-10-20T17:52:09.953660Z",
+    "labels": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "access granted by IAM permissions."
+    },
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "operation": {
+      "id": "b350008e-decb-40ee-99bd-435e44c26cab",
+      "producer": "k8s.io",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2023-10-20T17:52:13.194673264Z"
+  },
+  {
+    "insertId": "fowbt8966ebbnce2",
+    "jsonPayload": {
+      "pid": "11",
+      "message": "\"HTTP\" verb=\"GET\" URI=\"/apis/storage.gcp.upbound.io/v1beta1/buckets/bucketbenchone1929-e48s7z46a81t45\" latency=\"15.899582ms\" userAgent=\"kubectl/v1.28.1 (linux/amd64) kubernetes/8dc49c4\" audit-ID=\"b350008e-decb-40ee-99bd-435e44c26cab\" srcIP=\"80.12.102.169:29624\" apf_pl=\"global-default\" apf_fs=\"global-default\" apf_iseats=1 apf_fseats=0 apf_additionalLatency=\"0s\" apf_execution_time=\"15.260762ms\" resp=404"
+    },
+    "resource": {
+      "type": "k8s_control_plane_component",
+      "labels": {
+        "location": "europe-west1",
+        "cluster_name": "autopilot-crossplane",
+        "component_name": "apiserver",
+        "project_id": "sbx-31371-t559vlz35eulkvmklkin",
+        "component_location": "europe-west1-b"
+      }
+    },
+    "timestamp": "2023-10-20T17:52:09.953796Z",
+    "severity": "INFO",
+    "logName": "projects/sbx-31371-t559vlz35eulkvmklkin/logs/container.googleapis.com%2Fapiserver",
+    "sourceLocation": {
+      "file": "httplog.go",
+      "line": "132"
+    },
+    "receiveTimestamp": "2023-10-20T17:52:15.192292984Z"
+  }
+]
