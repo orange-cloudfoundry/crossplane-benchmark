@@ -32,9 +32,9 @@ Create the network requirements (VPC and flow):
 $ kubectl apply -k network/
 ```
 
-Finally deploy the instance ressource (DNS ManagedZone):
+Finally deploy the instance resource (DNS ManagedZone):
 ```bash
-$ kubectl apply -k ressource/
+$ kubectl apply -k resource/
 ```
 
 ## Infrastructure deployment
@@ -48,16 +48,16 @@ $ ./cluster-gke.sh PROJECT_GCP_ID
 - Due to the number of object in the GCP provider. The provider have been cut into multiple sub-provider. Here we are installing the Compute, DNS and Storage providers.
 > *[...] The more CRDs you have on a cluster the more resources it will consume and this can result in a performance penalty* [...] https://blog.upbound.io/new-provider-families
 
-- As with the [FE provider](https://marketplace.upbound.io/providers/frangipaneteam/provider-flexibleengine/), in GCP, objects of type Subnet cannot be modified (decrease a CIDR). It means that the provider is blocked until you delete manually the ressource. **Because the provider doesn't know the dependency between object, it is impossible for it to delete all object. And so, there is no option to force replacement**.
+- As with the [FE provider](https://marketplace.upbound.io/providers/frangipaneteam/provider-flexibleengine/), in GCP, objects of type Subnet cannot be modified (decrease a CIDR). It means that the provider is blocked until you delete manually the resource. **Because the provider doesn't know the dependency between object, it is impossible for it to delete all object. And so, there is no option to force replacement**.
 
 - The reconciliation loop takes approximately 10 min in the GCP provider. This can be modified with the alpha feature: *--poll=1m*
 
-- With the GCP provider we can import external ressource. But the alpha feature need to be manually enable: *--enable-management-policies*
+- With the GCP provider we can import external resource. But the alpha feature need to be manually enable: *--enable-management-policies*
 
-- When deleting a huge number of GCP ressources, some ressources are not deleted from the GCP console. But there have been correctly deleted from the Kubernetes cluster. This means that certain resources are no longer managed by Crossplane.
+- When deleting a huge number of GCP resources, some resources are not deleted from the GCP console. But there have been correctly deleted from the Kubernetes cluster. This means that certain resources are no longer managed by Crossplane.
 **This issue happen with Recordset resources and Bucket resources.** This can potentially involve all objects deployed through Upjet.
 
-- Creation of more than 1000+ ressources can take multiple hour. Very expensive in terms of CPU usage. **One Terraform process is started for each API ressource request.** Because of the reconciliation loop we can't predict how long it will take to deploy the ressources.
+- Creation of more than 1000+ resources can take multiple hour. Very expensive in terms of CPU usage. **One Terraform process is started for each API resource request.** Because of the reconciliation loop we can't predict how long it will take to deploy the resources.
 
 - The provider GCP use the Upjet implementation. When deploying thousands of managed objects, the provider quickly consumes all the available CPU time. In the benchmark, the provider does not consume more than 10 vCPUs, even if more are available. Each request or reconciliation launches a new Terraform process. **The provider's performance is degraded and this has a major impact on the number of API calls the provider can make.**
 
@@ -104,12 +104,12 @@ $ kubectl delete -f benchmark/out/
 > - [benchmarksix10.csv](benchmark/result/benchmarksix10.csv), [benchmarksix10.json](benchmark/result/benchmarksix10.json)
 > - [benchmarksix11.csv](benchmark/result/benchmarksix11.csv), [benchmarksix11.json](benchmark/result/benchmarksix11.json)
 
-### Run N°5: 4000 RecordSets: Service interruption during ressource creation 
+### Run N°5: 4000 RecordSets: Service interruption during resource creation 
 
 > Start deploying the 4000 RecordSet and shutdown gracefully the single node.
 > 
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/0d7ee8f4-d681-42d0-a577-fe0ffd8a8b2c)
-> After provider restart resource already created, try in loop to create the ressource. In order to discover the ressource already created we need to enable debug in the provider option to have deployment information. **No fault recovery management.**
+> After provider restart resource already created, try in loop to create the resource. In order to discover the resource already created we need to enable debug in the provider option to have deployment information. **No fault recovery management.**
 >
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/83184a99-4719-45b3-84ee-bc1eebcf88bb)
 > 
@@ -124,5 +124,5 @@ $ kubectl delete -f benchmark/out/
 > >
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/7cd1e4bc-92ae-4117-842b-32bafe8dae96)
 > CPU is increasing gradually after the end of creation (here the CPU limit is 5). **Same behavior as the run n°4: Bucket deleted from K8s but not from GCP.** In the log we can see the delete request is not receive by GCP.
-> - Not deleted in GCP: [bucketbenchone1929.csv](benchmark/result/bucketbenchone1929.csv), [bucketbenchone1929.json](benchmark/result/bucketbenchone1929.json)
-> - Correctly deleted in GCP and K8s: [bucketbenchone1928.csv](benchmark/result/bucketbenchone1928.csv), [bucketbenchone1928.json](benchmark/result/bucketbenchone1928.json)
+> - Correctly deleted in GCP and K8s: [bucketbenchone1929.csv](benchmark/result/bucketbenchone1929.csv), [bucketbenchone1929.json](benchmark/result/bucketbenchone1929.json)
+> - Not deleted in GCP: [bucketbenchone1928.csv](benchmark/result/bucketbenchone1928.csv), [bucketbenchone1928.json](benchmark/result/bucketbenchone1928.json)
