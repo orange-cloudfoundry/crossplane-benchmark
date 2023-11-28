@@ -11,7 +11,7 @@ By leveraging the Kubernetes ecosystem and its strong declarative model, Crosspl
 
 ## Benchmark Summary
 
-### Crossplane Benchmark on GCP - 18/10/2023
+### [Crossplane Benchmark on GCP - 18/10/2023](benchmark_gcp_18-10-2023/)
 - **Date:** 18/10/2023
 - **Platform:** Google Cloud Platform (GCP), 
 - **Version:** K8s: 1.27.3-gke.100, Crossplane: v1.13, [provider-gcp-dns](https://marketplace.upbound.io/providers/upbound/provider-gcp-dns/v0.37.0):v0.37.0

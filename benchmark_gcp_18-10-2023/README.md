@@ -101,8 +101,8 @@ $ kubectl delete -f benchmark/out/
 >
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/86e26452-ea08-48c1-abb5-fb1688d8c785)
 > Log details (exported from GCP Logs Explorer): 
-> - [benchmarksix10.csv](benchmark_gcp_18-10-2023/benchmark/result/benchmarksix10.csv), [benchmarksix10.json](benchmark_gcp_18-10-2023/benchmark/result/benchmarksix10.json)
-> - [benchmarksix11.csv](benchmark_gcp_18-10-2023/benchmark/result/benchmarksix11.csv), [benchmarksix11.json](benchmark_gcp_18-10-2023/benchmark/result/benchmarksix11.json)
+> - [benchmarksix10.csv](benchmark/result/benchmarksix10.csv), [benchmarksix10.json](benchmark/result/benchmarksix10.json)
+> - [benchmarksix11.csv](benchmark/result/benchmarksix11.csv), [benchmarksix11.json](benchmark/result/benchmarksix11.json)
 
 ### Run N°5: 4000 RecordSets: Service interruption during ressource creation 
 
@@ -114,7 +114,7 @@ $ kubectl delete -f benchmark/out/
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/83184a99-4719-45b3-84ee-bc1eebcf88bb)
 > 
 > Log details (exported from GCP Logs Explorer): 
-> - [benchmarkeight339.csv](benchmark_gcp_18-10-2023/benchmark/result/benchmarkeight339.csv), [benchmarkeight339.json](benchmark_gcp_18-10-2023/benchmark/result/benchmarkeight339.json)
+> - [benchmarkeight339.csv](benchmark/result/benchmarkeight339.csv), [benchmarkeight339.json](benchmark/result/benchmarkeight339.json)
 
 
 
@@ -124,5 +124,5 @@ $ kubectl delete -f benchmark/out/
 > >
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/7cd1e4bc-92ae-4117-842b-32bafe8dae96)
 > CPU is increasing gradually after the end of creation (here the CPU limit is 5). **Same behavior as the run n°4: Bucket deleted from K8s but not from GCP.** In the log we can see the delete request is not receive by GCP.
-> - Not deleted in GCP: [bucketbenchone1929.csv](benchmark_gcp_18-10-2023/benchmark/result/bucketbenchone1929.csv), [bucketbenchone1929.json](benchmark_gcp_18-10-2023/benchmark/result/bucketbenchone1929.json)
-> - Correctly deleted in GCP and K8s: [bucketbenchone1928.csv](benchmark_gcp_18-10-2023/benchmark/result/bucketbenchone1928.csv), [bucketbenchone1928.json](benchmark_gcp_18-10-2023/benchmark/result/bucketbenchone1928.json)
+> - Not deleted in GCP: [bucketbenchone1929.csv](benchmark/result/bucketbenchone1929.csv), [bucketbenchone1929.json](benchmark/result/bucketbenchone1929.json)
+> - Correctly deleted in GCP and K8s: [bucketbenchone1928.csv](benchmark/result/bucketbenchone1928.csv), [bucketbenchone1928.json](benchmark/result/bucketbenchone1928.json)
