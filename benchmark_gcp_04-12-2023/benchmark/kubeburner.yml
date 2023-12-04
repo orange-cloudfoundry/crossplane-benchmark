@@ -1,0 +1,100 @@
+global:
+  requestTimeout: 10m
+
+jobs:
+  - name: create-recordset
+    jobType: create
+    jobIterations: 5000
+    qps: 10
+    burst: 10
+    namespace: crossplane-iaas-perf
+    namespacedIterations: false
+    cleanup: true
+    # verify object count after running each job
+    verifyObjects: true
+    errorOnVerify: true
+    # Wait for object
+    waitWhenFinished: true
+    maxWaitTimeout: 100h
+
+    objects:
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 0
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 1
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 2
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 3
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 4
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 5
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 6
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 7
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 8
+    - objectTemplate: benchmark/templates/recordset.yaml
+      replicas: 1
+      wait: true
+      waitOptions:
+        forCondition: Ready
+      inputVars:
+        numId: 9
+
+  - name: delete-recordset
+    jobType: delete
+    qps: 20
+    burst: 20
+    waitForDeletion: true
+    objects:
+      - kind: RecordSet
+        labelSelector: {source: kube-burner}
+        apiVersion: dns.gcp.upbound.io/v1beta1

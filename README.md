@@ -16,7 +16,22 @@ By leveraging the Kubernetes ecosystem and its strong declarative model, Crosspl
 - **Platform:** Google Cloud Platform (GCP), 
 - **Version:** K8s: 1.27.3-gke.100, Crossplane: v1.13, [provider-gcp-dns](https://marketplace.upbound.io/providers/upbound/provider-gcp-dns/v0.37.0):v0.37.0
 - **Objective:** Evaluate Crossplane's behaviors and performance on GCP infrastructure
-- **Method:** Deployed multiple Crossplane components on a Kubernetes cluster managed by K3s to monitor resource provisioning and management.
+- **Method:** Deployed multiple Crossplane components on a Kubernetes cluster managed by GKE to monitor resource provisioning and management.
+
+*Issue created in conjunction with the benchmark:*
+- ([upjet#304](https://github.com/crossplane/upjet/issues/304)) Upon provider pod crash/restart, MR deletion leaves orphaned external resources on cloud provider
+- ([upjet#305](https://github.com/crossplane/upjet/issues/305)) Upjet leaks orphan external resources upon provider pod crash/restart
+- ([provider-gcp#427](https://github.com/upbound/provider-gcp/issues/427)) Improve TTR and performance when large number of MRs
+
+### [Crossplane Benchmark on GCP - 04/12/2023](benchmark_gcp_04-12-2023/)
+- **Date:** 04/12/2023
+- **Platform:** Google Cloud Platform (GCP), 
+- **Version:** K8s: 1.27.3-gke.100, Crossplane: v1.14, [provider-gcp-dns](https://marketplace.upbound.io/providers/upbound/provider-gcp-dns):v0.39.0-69844
+- **Objective:** Evaluate Crossplane's performance with new Upjet release v1.0.0
+- **Method:** Deployed multiple Crossplane components on a Kubernetes cluster managed by GKE to monitor resource provisioning and management.
+
+*Issue linked:*
+- ([provider-gcp#427](https://github.com/upbound/provider-gcp/issues/427)) Improve TTR and performance when large number of MRs
 
 ## Repository Structure
 

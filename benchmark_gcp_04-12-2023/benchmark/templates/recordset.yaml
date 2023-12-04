@@ -1,0 +1,14 @@
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: RecordSet
+metadata:
+  name: benchmarktwo-telco{{.numId}}-{{.Iteration}}
+  labels:
+    source: kube-burner
+spec:
+  forProvider:
+    managedZone: newtelco-zone-dns{{.numId}}
+    name: benchmarktwo-{{.Iteration}}.newtelco{{.numId}}.orange.com.
+    rrdatas:
+      - 127.0.0.1
+    ttl: 300
+    type: A

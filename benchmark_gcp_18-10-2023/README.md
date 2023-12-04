@@ -104,7 +104,7 @@ $ kubectl delete -f benchmark/out/
 > - [benchmarksix10.csv](benchmark/result/benchmarksix10.csv), [benchmarksix10.json](benchmark/result/benchmarksix10.json)
 > - [benchmarksix11.csv](benchmark/result/benchmarksix11.csv), [benchmarksix11.json](benchmark/result/benchmarksix11.json)
 
-### Run N°5: 4000 RecordSets: Service interruption during resource creation 
+### Run N°5: 4000 RecordSets: Service interruption during resource creation
 
 > Start deploying the 4000 RecordSet and shutdown gracefully the single node.
 > 

@@ -1,0 +1,54 @@
+time="2023-12-02 11:20:51" level=info msg="🔥 Starting kube-burner (1.7.10@39759b740cb508759ad8b7f05e353396b0d8074d) with UUID 0b1a3483-b478-4903-a88c-6588bbf8ec9c" file="job.go:95"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="Job create-recordset: 5000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-02 11:20:51" level=info msg="QPS: 10" file="job.go:106"
+time="2023-12-02 11:20:51" level=info msg="Burst: 10" file="job.go:107"
+time="2023-12-02 11:20:52" level=info msg="Pre-load: images from job create-recordset" file="pre_load.go:45"
+time="2023-12-02 11:20:52" level=info msg="No images found to pre-load, continuing" file="pre_load.go:51"
+time="2023-12-02 11:20:52" level=info msg="Triggering job: create-recordset" file="job.go:125"
+time="2023-12-02 11:20:52" level=info msg="Deleting non-namespace resources specific to this benchmark" file="namespaces.go:110"
+time="2023-12-02 11:20:52" level=info msg="Running job create-recordset" file="create.go:112"
+time="2023-12-02 11:29:11" level=info msg="500/5000 iterations completed" file="create.go:130"
+I1202 11:36:02.730967  154625 request.go:696] Waited for 1.085555043s, retries: 1, retry-after: 1s - retry-reason: due to server-side throttling, FlowSchema UID: "ff2a9981-abb7-4b78-9bc1-5da8d5709b66" - request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1202 11:37:23.230717  154625 request.go:696] Waited for 9.536451129s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 11:37:31" level=info msg="1000/5000 iterations completed" file="create.go:130"
+I1202 11:37:33.329944  154625 request.go:696] Waited for 9.5347761s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1202 11:45:36.230845  154625 request.go:696] Waited for 9.535990744s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 11:45:43" level=error msg="Error creating object RecordSet/benchmarktwo-telco6-1465 in namespace : etcdserver: request timed out" file="create.go:270"
+time="2023-12-02 11:45:43" level=error msg="Retrying object creation" file="create.go:272"
+time="2023-12-02 11:45:43" level=error msg="Error creating object RecordSet/benchmarktwo-telco5-1465 in namespace : etcdserver: request timed out" file="create.go:270"
+time="2023-12-02 11:45:43" level=error msg="Retrying object creation" file="create.go:272"
+I1202 11:45:46.330492  154625 request.go:696] Waited for 9.535696107s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 11:45:51" level=info msg="1500/5000 iterations completed" file="create.go:130"
+time="2023-12-02 11:45:54" level=error msg="RecordSet/benchmarktwo-telco6-1465 in namespace  already exists" file="create.go:267"
+time="2023-12-02 11:45:54" level=error msg="RecordSet/benchmarktwo-telco5-1465 in namespace  already exists" file="create.go:267"
+I1202 11:45:56.430922  154625 request.go:696] Waited for 9.735707129s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1202 11:54:09.530179  154625 request.go:696] Waited for 10.335579623s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 11:54:11" level=info msg="2000/5000 iterations completed" file="create.go:130"
+I1202 11:54:19.530902  154625 request.go:696] Waited for 10.336456174s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1202 11:56:10.330407  154625 request.go:696] Waited for 15.236180481s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 11:56:15" level=error msg="Error creating object RecordSet/benchmarktwo-telco0-2099 in namespace : Post \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s\": net/http: TLS handshake timeout" file="create.go:270"
+I1202 13:06:55.930359  154625 request.go:696] Waited for 22m58.336203668s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1202 13:07:06.029994  154625 request.go:696] Waited for 22m58.328395956s due to client-side throttling, not priority and fairness, request: POST:https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-02 13:07:09" level=info msg="Waiting up to 100h0m0s for actions to be completed" file="create.go:164"
+time="2023-12-02 13:08:27" level=info msg="Actions in namespace  completed" file="waiters.go:76"
+time="2023-12-02 13:08:27" level=info msg="Verifying created objects" file="utils.go:86"
+time="2023-12-02 13:08:37" level=error msg="Error verifying object: Get \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3D0b1a3483-b478-4903-a88c-6588bbf8ec9c%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D0&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-02 13:18:40" level=error msg="Error verifying object: Get \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3D0b1a3483-b478-4903-a88c-6588bbf8ec9c%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D9&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-02 13:18:53" level=error msg="Error verifying object: Get \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3D0b1a3483-b478-4903-a88c-6588bbf8ec9c%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D9&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-02 13:19:12" level=error msg="Error verifying object: Get \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3D0b1a3483-b478-4903-a88c-6588bbf8ec9c%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D9&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-02 13:19:12" level=error msg="object verification failed" file="job.go:150"
+time="2023-12-02 13:19:12" level=info msg="Job create-recordset took 1h58m20s" file="job.go:175"
+time="2023-12-02 13:19:12" level=info msg="QPS: 20" file="job.go:106"
+time="2023-12-02 13:19:12" level=info msg="Burst: 20" file="job.go:107"
+time="2023-12-02 13:19:12" level=info msg="Triggering job: delete-recordset" file="job.go:125"
+time="2023-12-02 13:20:23" level=error msg="Error found listing recordsets labeled with source=kube-burner: the server was unable to return a response in the time allotted, but may still be processing the request" file="delete.go:71"
+time="2023-12-02 13:28:02" level=error msg="Error found listing recordsets labeled with source=kube-burner: Get \"https://34.79.133.181/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=source%3Dkube-burner&timeout=10m0s\": net/http: TLS handshake timeout" file="delete.go:71"

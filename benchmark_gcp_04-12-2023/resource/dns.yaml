@@ -1,0 +1,149 @@
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns0
+  name: newtelco-zone-dns0
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco0.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns1
+  name: newtelco-zone-dns1
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco1.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns2
+  name: newtelco-zone-dns2
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco2.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns3
+  name: newtelco-zone-dns3
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco3.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns4
+  name: newtelco-zone-dns4
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco4.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns5
+  name: newtelco-zone-dns5
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco5.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns6
+  name: newtelco-zone-dns6
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco6.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns7
+  name: newtelco-zone-dns7
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco7.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns8
+  name: newtelco-zone-dns8
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco8.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: newtelco-zone-dns9
+  name: newtelco-zone-dns9
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: newtelco9.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
