@@ -50,9 +50,9 @@ $ kube-burner init -c benchmark/kubeburner.yml --timeout 100h 2>&1 | tee kubebur
 
 ## Benchmark details
 
-### Run N°1: 40 000 RecordSets
+### Run N°1: 50 000 RecordSets
 
-> Deployment of 40 000 recordset, the GCP API cannot follow the number of requests perform to the GCP DNS API. The provider receive 429 return status. 
+> Deployment of 50 000 recordset, the GCP API cannot follow the number of requests perform to the GCP DNS API. The provider receive 429 return status. 
 > 
 > ![kubeburner-gcp-upjet-1 0 0-api](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/f3cb2e6f-d5df-4ff1-9ac1-8cbbd392a552)
 >
