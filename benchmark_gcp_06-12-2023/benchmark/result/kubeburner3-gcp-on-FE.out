@@ -1,0 +1,82 @@
+time="2023-12-05 16:34:36" level=info msg="🔥 Starting kube-burner (1.7.10@39759b740cb508759ad8b7f05e353396b0d8074d) with UUID bab5d098-f063-44da-b197-7848dfd0b590" file="job.go:95"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-05 16:34:36" level=info msg="QPS: 1" file="job.go:106"
+time="2023-12-05 16:34:36" level=info msg="Burst: 1" file="job.go:107"
+time="2023-12-05 16:34:36" level=info msg="Pre-load: images from job create-recordset" file="pre_load.go:45"
+time="2023-12-05 16:34:36" level=info msg="No images found to pre-load, continuing" file="pre_load.go:51"
+time="2023-12-05 16:34:36" level=info msg="Triggering job: create-recordset" file="job.go:125"
+time="2023-12-05 16:34:36" level=info msg="Deleting namespaces with label kube-burner-job=create-recordset" file="namespaces.go:64"
+time="2023-12-05 16:34:37" level=info msg="Waiting for namespaces to be definitely deleted" file="namespaces.go:147"
+time="2023-12-05 16:34:43" level=info msg="Deleting non-namespace resources specific to this benchmark" file="namespaces.go:110"
+time="2023-12-05 16:34:53" level=info msg="Running job create-recordset" file="create.go:112"
+time="2023-12-05 16:51:32" level=info msg="100/1000 iterations completed" file="create.go:130"
+time="2023-12-05 17:08:12" level=info msg="200/1000 iterations completed" file="create.go:130"
+time="2023-12-05 17:24:52" level=info msg="300/1000 iterations completed" file="create.go:130"
+time="2023-12-05 17:41:32" level=info msg="400/1000 iterations completed" file="create.go:130"
+time="2023-12-05 17:58:12" level=info msg="500/1000 iterations completed" file="create.go:130"
+time="2023-12-05 18:14:52" level=info msg="600/1000 iterations completed" file="create.go:130"
+time="2023-12-05 18:31:32" level=info msg="700/1000 iterations completed" file="create.go:130"
+time="2023-12-05 18:48:12" level=info msg="800/1000 iterations completed" file="create.go:130"
+time="2023-12-05 19:04:52" level=info msg="900/1000 iterations completed" file="create.go:130"
+time="2023-12-05 19:21:33" level=info msg="Waiting up to 100h0m0s for actions to be completed" file="create.go:164"
+I1205 19:21:34.702142  303629 request.go:696] Waited for 1.000952672s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1205 19:22:16.655630  303629 request.go:696] Waited for 1.021470471s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1205 19:22:39.493874  303629 request.go:696] Waited for 1.173995136s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-05 19:23:18" level=info msg="Actions in namespace  completed" file="waiters.go:76"
+time="2023-12-05 19:23:18" level=info msg="Verifying created objects" file="utils.go:86"
+time="2023-12-05 19:23:28" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D0&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:23:39" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D0&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:23:52" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D0&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:24:11" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D0&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:24:21" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D1&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:24:32" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D1&limit=500&timeout=10m0s\": net/http: TLS handshake timeout" file="utils.go:97"
+time="2023-12-05 19:24:37" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D1&limit=500&timeout=10m0s\": Service Unavailable - error from a previous attempt: EOF" file="utils.go:97"
+time="2023-12-05 19:24:46" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D1&limit=500&timeout=10m0s\": Service Unavailable" file="utils.go:97"
+time="2023-12-05 19:24:47" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D2&limit=500&timeout=10m0s\": Service Unavailable" file="utils.go:97"
+time="2023-12-05 19:24:48" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D2&limit=500&timeout=10m0s\": Service Unavailable" file="utils.go:97"
+time="2023-12-05 19:24:51" level=error msg="Error verifying object: Get \"https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=kube-burner-uuid%3Dbab5d098-f063-44da-b197-7848dfd0b590%2Ckube-burner-job%3Dcreate-recordset%2Ckube-burner-index%3D2&limit=500&timeout=10m0s\": Service Unavailable" file="utils.go:97"
+time="2023-12-05 19:25:06" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:13" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:19" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:26" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:32" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:37" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:44" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:50" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-05 19:25:50" level=error msg="object verification failed" file="job.go:150"
+time="2023-12-05 19:25:50" level=info msg="Job create-recordset took 2h51m14s" file="job.go:175"
+time="2023-12-05 19:25:50" level=info msg="QPS: 20" file="job.go:106"
+time="2023-12-05 19:25:50" level=info msg="Burst: 20" file="job.go:107"
+time="2023-12-05 19:25:50" level=info msg="Triggering job: delete-recordset" file="job.go:125"
+time="2023-12-05 19:26:10" level=info msg="Found 10000 recordsets with selector source=kube-burner, removing them" file="delete.go:79"
+I1205 19:31:27.528972  303629 request.go:696] Waited for 1.010418563s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-430?timeout=10m0s
+I1205 19:31:37.578861  303629 request.go:696] Waited for 1.009587488s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-554?timeout=10m0s
+I1205 19:31:47.578972  303629 request.go:696] Waited for 1.060038361s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-604?timeout=10m0s
+I1205 19:31:57.629318  303629 request.go:696] Waited for 1.061890648s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-241?timeout=10m0s
+I1205 19:32:07.678717  303629 request.go:696] Waited for 1.113976573s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-328?timeout=10m0s
+I1205 19:32:17.729334  303629 request.go:696] Waited for 1.16929101s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-421?timeout=10m0s
+I1205 19:32:27.778652  303629 request.go:696] Waited for 1.223076538s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-738?timeout=10m0s
+I1205 19:32:37.828918  303629 request.go:696] Waited for 1.226707592s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-809?timeout=10m0s
+I1205 19:32:47.879509  303629 request.go:696] Waited for 1.283403719s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-979?timeout=10m0s
+I1205 19:32:57.929140  303629 request.go:696] Waited for 1.340461902s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-124?timeout=10m0s
+I1205 19:33:07.978500  303629 request.go:696] Waited for 1.343268076s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-879?timeout=10m0s
+I1205 19:33:17.979256  303629 request.go:696] Waited for 1.401344546s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-455?timeout=10m0s
+I1205 19:33:28.028935  303629 request.go:696] Waited for 1.458270611s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-545?timeout=10m0s
+I1205 19:33:38.029311  303629 request.go:696] Waited for 1.462731627s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-873?timeout=10m0s
+I1205 19:33:48.078872  303629 request.go:696] Waited for 1.519088752s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-907?timeout=10m0s
+I1205 19:33:58.129384  303629 request.go:696] Waited for 1.522362178s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-325?timeout=10m0s
+I1205 19:34:08.178925  303629 request.go:696] Waited for 1.577244216s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-463?timeout=10m0s
+I1205 19:34:18.229297  303629 request.go:696] Waited for 1.579988886s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-64?timeout=10m0s
+I1205 19:34:28.278932  303629 request.go:696] Waited for 1.633964825s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-755?timeout=10m0s
+time="2023-12-05 20:12:46" level=info msg="Job delete-recordset took 46m56s" file="job.go:175"
+time="2023-12-05 20:12:46" level=info msg="Finished execution with UUID: bab5d098-f063-44da-b197-7848dfd0b590" file="job.go:243"
+time="2023-12-05 20:12:46" level=error msg="object verification failed" file="kube-burner.go:136"

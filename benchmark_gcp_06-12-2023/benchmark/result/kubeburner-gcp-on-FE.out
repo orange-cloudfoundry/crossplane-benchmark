@@ -1,0 +1,108 @@
+time="2023-12-04 18:06:27" level=info msg="🔥 Starting kube-burner (1.7.10@39759b740cb508759ad8b7f05e353396b0d8074d) with UUID f8672e7f-ab63-4e40-88f3-e861e031c44b" file="job.go:95"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="Job create-recordset: 1000 iterations with 1 RecordSet replicas" file="create.go:96"
+time="2023-12-04 18:06:27" level=info msg="QPS: 1" file="job.go:106"
+time="2023-12-04 18:06:27" level=info msg="Burst: 1" file="job.go:107"
+time="2023-12-04 18:06:27" level=info msg="Pre-load: images from job create-recordset" file="pre_load.go:45"
+time="2023-12-04 18:06:27" level=info msg="No images found to pre-load, continuing" file="pre_load.go:51"
+time="2023-12-04 18:06:27" level=info msg="Triggering job: create-recordset" file="job.go:125"
+time="2023-12-04 18:06:27" level=info msg="Deleting namespaces with label kube-burner-job=create-recordset" file="namespaces.go:64"
+time="2023-12-04 18:06:28" level=info msg="Waiting for namespaces to be definitely deleted" file="namespaces.go:147"
+time="2023-12-04 18:06:34" level=info msg="Deleting non-namespace resources specific to this benchmark" file="namespaces.go:110"
+time="2023-12-04 18:06:44" level=info msg="Running job create-recordset" file="create.go:112"
+time="2023-12-04 18:23:23" level=info msg="100/1000 iterations completed" file="create.go:130"
+time="2023-12-04 18:40:03" level=info msg="200/1000 iterations completed" file="create.go:130"
+time="2023-12-04 18:56:43" level=info msg="300/1000 iterations completed" file="create.go:130"
+time="2023-12-04 19:13:23" level=info msg="400/1000 iterations completed" file="create.go:130"
+time="2023-12-04 19:30:03" level=info msg="500/1000 iterations completed" file="create.go:130"
+time="2023-12-04 19:46:43" level=info msg="600/1000 iterations completed" file="create.go:130"
+time="2023-12-04 20:03:23" level=info msg="700/1000 iterations completed" file="create.go:130"
+time="2023-12-04 20:20:03" level=info msg="800/1000 iterations completed" file="create.go:130"
+time="2023-12-04 20:36:43" level=info msg="900/1000 iterations completed" file="create.go:130"
+time="2023-12-04 20:53:24" level=info msg="Waiting up to 100h0m0s for actions to be completed" file="create.go:164"
+I1204 20:53:25.890712  287291 request.go:696] Waited for 1.500637399s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:54:45.148186  287291 request.go:696] Waited for 1.187231817s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:55:52.018415  287291 request.go:696] Waited for 1.034495212s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:56:08.951020  287291 request.go:696] Waited for 1.154322338s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:57:45.879130  287291 request.go:696] Waited for 1.234404321s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:58:56.378579  287291 request.go:696] Waited for 1.214941607s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 20:59:47.674151  287291 request.go:696] Waited for 1.153878854s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:00:56.181331  287291 request.go:696] Waited for 1.28601951s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:01:33.032773  287291 request.go:696] Waited for 1.381262032s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:02:22.022411  287291 request.go:696] Waited for 1.224928942s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:02:58.838962  287291 request.go:696] Waited for 1.11795144s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:03:32.506072  287291 request.go:696] Waited for 1.041128734s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:04:08.392119  287291 request.go:696] Waited for 1.325458881s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:04:25.746953  287291 request.go:696] Waited for 1.036974307s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:04:43.620976  287291 request.go:696] Waited for 1.212108194s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:05:02.257128  287291 request.go:696] Waited for 1.061568545s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:06:09.833144  287291 request.go:696] Waited for 1.068935296s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:06:26.324816  287291 request.go:696] Waited for 1.458019493s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:07:01.339734  287291 request.go:696] Waited for 1.374673527s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:11:03.263657  287291 request.go:696] Waited for 1.137707636s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:13:39.698609  287291 request.go:696] Waited for 1.092987917s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:16:08.711875  287291 request.go:696] Waited for 1.086650345s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:16:28.722562  287291 request.go:696] Waited for 1.202379545s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:16:46.917255  287291 request.go:696] Waited for 1.337710732s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:18:08.442443  287291 request.go:696] Waited for 1.010424053s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:18:40.334246  287291 request.go:696] Waited for 1.188632854s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:22:09.768571  287291 request.go:696] Waited for 1.226215477s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+I1204 21:22:32.410328  287291 request.go:696] Waited for 1.003849461s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?timeout=10m0s
+time="2023-12-04 21:22:50" level=info msg="Actions in namespace  completed" file="waiters.go:76"
+time="2023-12-04 21:22:50" level=info msg="Verifying created objects" file="utils.go:86"
+time="2023-12-04 21:22:56" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:02" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:08" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:14" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:20" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:26" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:32" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:38" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:44" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:50" level=info msg="recordsets found: 1000 Expected: 1000" file="utils.go:119"
+time="2023-12-04 21:23:50" level=info msg="Job create-recordset took 3h17m23s" file="job.go:175"
+time="2023-12-04 21:23:50" level=info msg="QPS: 20" file="job.go:106"
+time="2023-12-04 21:23:50" level=info msg="Burst: 20" file="job.go:107"
+time="2023-12-04 21:23:50" level=info msg="Triggering job: delete-recordset" file="job.go:125"
+time="2023-12-04 21:24:01" level=info msg="Found 10000 recordsets with selector source=kube-burner, removing them" file="delete.go:79"
+I1204 21:27:25.481283  287291 request.go:696] Waited for 1.00920166s due to client-side throttling, not priority and fairness, request: GET:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets?labelSelector=source%3Dkube-burner&timeout=10m0s
+I1204 21:27:35.531037  287291 request.go:696] Waited for 1.03004371s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma4-121?timeout=10m0s
+I1204 21:27:45.539022  287291 request.go:696] Waited for 1.089244165s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma4-355?timeout=10m0s
+I1204 21:27:55.580501  287291 request.go:696] Waited for 1.133575039s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma4-561?timeout=10m0s
+I1204 21:28:05.580653  287291 request.go:696] Waited for 1.183734176s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma4-606?timeout=10m0s
+I1204 21:28:15.581208  287291 request.go:696] Waited for 1.234451513s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-123?timeout=10m0s
+I1204 21:28:25.631141  287291 request.go:696] Waited for 1.284116271s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-182?timeout=10m0s
+I1204 21:28:35.681054  287291 request.go:696] Waited for 1.334390261s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-383?timeout=10m0s
+I1204 21:28:45.730508  287291 request.go:696] Waited for 1.384136835s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-533?timeout=10m0s
+I1204 21:28:55.730570  287291 request.go:696] Waited for 1.3869479s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-665?timeout=10m0s
+I1204 21:29:05.731288  287291 request.go:696] Waited for 1.438262987s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-857?timeout=10m0s
+I1204 21:29:15.781101  287291 request.go:696] Waited for 1.488261461s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma5-898?timeout=10m0s
+I1204 21:29:25.830593  287291 request.go:696] Waited for 1.537910701s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-552?timeout=10m0s
+I1204 21:29:35.880615  287291 request.go:696] Waited for 1.589307079s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-339?timeout=10m0s
+I1204 21:29:45.881087  287291 request.go:696] Waited for 1.640022366s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-850?timeout=10m0s
+I1204 21:29:55.930579  287291 request.go:696] Waited for 1.642077474s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma6-993?timeout=10m0s
+I1204 21:30:05.930977  287291 request.go:696] Waited for 1.692608634s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-236?timeout=10m0s
+I1204 21:30:15.931200  287291 request.go:696] Waited for 1.744328247s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-643?timeout=10m0s
+I1204 21:30:25.981013  287291 request.go:696] Waited for 1.795564211s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-681?timeout=10m0s
+I1204 21:30:36.030676  287291 request.go:696] Waited for 1.847085447s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-511?timeout=10m0s
+I1204 21:30:46.031097  287291 request.go:696] Waited for 1.901182149s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma7-809?timeout=10m0s
+I1204 21:30:56.080866  287291 request.go:696] Waited for 1.953741433s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-178?timeout=10m0s
+I1204 21:31:06.131022  287291 request.go:696] Waited for 1.95643637s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-389?timeout=10m0s
+I1204 21:31:16.131213  287291 request.go:696] Waited for 2.013083208s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-53?timeout=10m0s
+I1204 21:31:26.180214  287291 request.go:696] Waited for 2.062147752s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma8-764?timeout=10m0s
+I1204 21:31:36.180664  287291 request.go:696] Waited for 2.113019834s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-21?timeout=10m0s
+I1204 21:31:46.180701  287291 request.go:696] Waited for 2.168235749s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-197?timeout=10m0s
+I1204 21:31:56.230208  287291 request.go:696] Waited for 2.217580554s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-878?timeout=10m0s
+I1204 21:32:06.230392  287291 request.go:696] Waited for 2.21822238s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-541?timeout=10m0s
+I1204 21:32:16.230470  287291 request.go:696] Waited for 2.268742931s due to client-side throttling, not priority and fairness, request: DELETE:https://90.84.196.139:8443/apis/dns.gcp.upbound.io/v1beta1/recordsets/benchmarkthree-aruma9-717?timeout=10m0s
+time="2023-12-04 22:15:03" level=info msg="Job delete-recordset took 51m14s" file="job.go:175"
+time="2023-12-04 22:15:03" level=info msg="Finished execution with UUID: f8672e7f-ab63-4e40-88f3-e861e031c44b" file="job.go:243"
+time="2023-12-04 22:15:03" level=info msg="👋 Exiting kube-burner f8672e7f-ab63-4e40-88f3-e861e031c44b" file="kube-burner.go:98"

@@ -1,0 +1,30 @@
+apiVersion: gcp.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: default
+spec:
+  projectID: sbx-31371-hxctg7ma6kten29zme1l
+  credentials:
+    source: Secret
+    secretRef:
+      namespace: crossplane-system
+      name: gcp-secret
+      key: gcp-credentials.json
+---
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: gcp-poll
+spec:
+  args:
+    - --enable-management-policies
+    - --debug
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-gcp-dns
+spec:
+  package: index.docker.io/ulucinar/provider-gcp-dns:v0.39.0-6984467fd36117d2b73e7fe78ae4cadc9e23f236
+  controllerConfigRef:
+    name: gcp-poll

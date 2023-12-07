@@ -1,0 +1,149 @@
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns0
+  name: aruma-zone-dns0
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma0.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns1
+  name: aruma-zone-dns1
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma1.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns2
+  name: aruma-zone-dns2
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma2.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns3
+  name: aruma-zone-dns3
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma3.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns4
+  name: aruma-zone-dns4
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma4.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns5
+  name: aruma-zone-dns5
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma5.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns6
+  name: aruma-zone-dns6
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma6.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns7
+  name: aruma-zone-dns7
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma7.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns8
+  name: aruma-zone-dns8
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma8.orange.com.
+    privateVisibilityConfig: []
+    visibility: private
+---
+apiVersion: dns.gcp.upbound.io/v1beta1
+kind: ManagedZone
+metadata:
+  annotations:
+    meta.upbound.io/example-id: dns/v1beta1/managedzoneiammember
+  labels:
+    managedzone: aruma-zone-dns9
+  name: aruma-zone-dns9
+spec:
+  forProvider:
+    description: Telco DNS zone
+    dnsName: aruma9.orange.com.
+    privateVisibilityConfig: []
+    visibility: private

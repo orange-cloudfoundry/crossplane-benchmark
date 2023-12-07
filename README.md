@@ -33,6 +33,16 @@ By leveraging the Kubernetes ecosystem and its strong declarative model, Crosspl
 *Issue linked:*
 - ([provider-gcp#427](https://github.com/upbound/provider-gcp/issues/427)) Improve TTR and performance when large number of MRs
 
+### [Crossplane Benchmark for GCP DNS on K3s - 06/12/2023](benchmark_gcp_06-12-2023/)
+- **Date:** 06/12/2023
+- **Platform:** FE, 
+- **Version:** K3s: v1.27.7+k3s2, Crossplane: v1.14, [provider-gcp-dns](https://marketplace.upbound.io/providers/upbound/provider-gcp-dns):v0.39.0-69844
+- **Objective:** Evaluate Crossplane's performance with new Upjet release v1.0.0
+- **Method:** Deployed multiple Crossplane components on a K3s cluster to monitor resource provisioning and management.
+
+*Issue linked:*
+- ([provider-gcp#427](https://github.com/upbound/provider-gcp/issues/427)) Improve TTR and performance when large number of MRs
+
 ## Repository Structure
 
 Each benchmark is stored in a separate directory within this repository. For the GCP benchmark conducted on 18/10/2023, please navigate to the `benchmark_gcp_18-10-2023` directory.

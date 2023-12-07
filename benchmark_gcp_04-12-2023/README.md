@@ -26,7 +26,6 @@ $ helm install crossplane crossplane-stable/crossplane --namespace crossplane-sy
 ```
 
 Update your credentials in the file:
-- *install/fe-provider/credential.json*
 - *install/gcp-provider/gcp-credentials.json*
 
 Apply the Crossplane configuration to install the GCP and FE provider:
@@ -36,7 +35,7 @@ $ kubectl apply -k install/
 
 Finally deploy the instance ressource (VMs):
 ```bash
-$ kubectl apply -k ressource/
+$ kubectl apply -k resource/
 ```
 
 ## Benchmark
