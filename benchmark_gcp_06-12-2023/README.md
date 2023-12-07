@@ -70,6 +70,7 @@ $ kube-burner init -c benchmark/kubeburner.yml --timeout 100h 2>&1 | tee kubebur
 > Deployment of 10 000 recordsets. There are memory leaks, because the DNS provider's memory is not being used quickly even though there are no resources left on the cluster. 
 > 
 > ![image](https://github.com/orange-cloudfoundry/crossplane-benchmark/assets/23292338/b861a5ff-82ad-4a90-a494-56c5bbdee2e5)
+> ![image](benchmark/result/kubeburner-gcp-on-FE.1.png)
 
 ### Run N°2: 40 000 RecordSets
 
@@ -77,3 +78,4 @@ $ kube-burner init -c benchmark/kubeburner.yml --timeout 100h 2>&1 | tee kubebur
 > 
 > But before this time some resource have not been created correctly. Take example of the 
 [*benchmarkthree-aruma3-2075*](benchmark/result/kubeburner4-benchmarkthree-aruma3-2075.txt) RecordSet. Still exist on GCP console after the benchmark. On the log we can see that the external resource have never been created correctly. The provider try to recreated in loop the resource. In comparison, the log file for the recordset [*benchmarkthree-aruma2-2075*](benchmark/result/kubeburner4-benchmarkthree-aruma2-2075.txt) is available as correct operation.
+> ![image](benchmark/result/kubeburner-gcp-on-FE.1.png)
