@@ -78,4 +78,4 @@ $ kube-burner init -c benchmark/kubeburner.yml --timeout 100h 2>&1 | tee kubebur
 > 
 > But before this time some resource have not been created correctly. Take example of the 
 [*benchmarkthree-aruma3-2075*](benchmark/result/kubeburner4-benchmarkthree-aruma3-2075.txt) RecordSet. Still exist on GCP console after the benchmark. On the log we can see that the external resource have never been created correctly. The provider try to recreated in loop the resource. In comparison, the log file for the recordset [*benchmarkthree-aruma2-2075*](benchmark/result/kubeburner4-benchmarkthree-aruma2-2075.txt) is available as correct operation.
-> ![image](benchmark/result/kubeburner-gcp-on-FE.1.png)
+> ![image](benchmark/result/kubeburner4-gcp-on-FE.1.png)
