@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  labels:
+    monitoring: custommetrics
+    deployment: kubectl
+    release: prometheus
+  name: custom-monitoring
+spec:
+  podMetricsEndpoints:
+  - port: http-metrics
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: kube-state-metrics

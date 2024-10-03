@@ -55,6 +55,16 @@ To access the benchmark details, including configuration files, results, and obs
 2. Navigate to the `benchmark_gcp_18-10-2023` directory.
 3. Review the `README.md` file for detailed instructions and insights.
 
+## *Bonus:* Monitoring dashboard
+
+*monitoring* directory contains **Grafana dashboard** and custom [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) configuration for Prometheus.
+
+The dashboard is using Operator metrics to collect statistics on controllers performance and usage. Most of the used metrics come from [Kubebuilder](https://book.kubebuilder.io/reference/metrics-reference).
+
+- *grafana-crossplane-dashboard.json* : Grafane dashboard for performance and usage per controller.
+- *grafana-crossplane-monitoring.json* : Monitoring dashboard to follow Claim usage and status. Helpful to create alerts.
+   - Require custom *kube-stae-metrics* configuration. On your Kubernetes cluster, you need to extract CRDs status of Claims. **This cannot be done automatically**, *kube-state-metrocs* is here to extract this informations. Configuration is available in `monitoring/kube-state-metrics/customresourcestate-metrics.yaml`. Each custom Claims should have their own configuration.
+
 ## Contact
 
 For any queries or discussions regarding the benchmarks, feel free to raise an issue in this repository or contact the maintainers directly.

@@ -1,0 +1,107 @@
+kind: CustomResourceStateMetrics
+spec:
+  resources:
+  - groupVersionKind:
+      group: tf.upbound.io
+      kind: "Workspace"
+      version: "v1beta1"
+    labelsFromPath:
+      name:
+      - metadata
+      - name
+      claim-name:
+      - metadata
+      - labels
+      - crossplane.io/claim-name
+      claim-namespace:
+      - metadata
+      - labels
+      - crossplane.io/claim-namespace
+    metrics:
+    - name: "condition_status"
+      help: "Condition status of custom resource"
+      each:
+        type: Gauge
+        gauge:
+          path: [status, conditions]
+          labelsFromPath:
+            type: ["type"]
+          valueFrom: ["status"]
+  - groupVersionKind:
+      group: cav.infra.ob
+      kind: "XS3"
+      version: "v1alpha1"
+    labelsFromPath:
+      name:
+      - metadata
+      - name
+      claim-name:
+      - metadata
+      - labels
+      - crossplane.io/claim-name
+      claim-namespace:
+      - metadata
+      - labels
+      - crossplane.io/claim-namespace
+    metrics:
+    - name: "condition_status"
+      help: "Condition status of custom resource"
+      each:
+        type: Gauge
+        gauge:
+          path: [status, conditions]
+          labelsFromPath:
+            type: ["type"]
+          valueFrom: ["status"]
+  - groupVersionKind:
+      group: gcp.infra.ob
+      kind: "XS3"
+      version: "v1alpha1"
+    labelsFromPath:
+      name:
+      - metadata
+      - name
+      claim-name:
+      - metadata
+      - labels
+      - crossplane.io/claim-name
+      claim-namespace:
+      - metadata
+      - labels
+      - crossplane.io/claim-namespace
+    metrics:
+    - name: "condition_status"
+      help: "Condition status of custom resource"
+      each:
+        type: Gauge
+        gauge:
+          path: [status, conditions]
+          labelsFromPath:
+            type: ["type"]
+          valueFrom: ["status"]
+  - groupVersionKind:
+      group: cav.infra.ob
+      kind: "XVApp"
+      version: "v1alpha1"
+    labelsFromPath:
+      name:
+      - metadata
+      - name
+      claim-name:
+      - metadata
+      - labels
+      - crossplane.io/claim-name
+      claim-namespace:
+      - metadata
+      - labels
+      - crossplane.io/claim-namespace
+    metrics:
+    - name: "condition_status"
+      help: "Condition status of custom resource"
+      each:
+        type: Gauge
+        gauge:
+          path: [status, conditions]
+          labelsFromPath:
+            type: ["type"]
+          valueFrom: ["status"]

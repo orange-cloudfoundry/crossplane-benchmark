@@ -1,0 +1,33 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  labels:
+    monitoring: provider-iaas
+    deployment: kubectl
+    release: prometheus
+  name: provider-iaas-monitoring
+  namespace: crossplane-system
+spec:
+  podMetricsEndpoints:
+  - port: metrics
+  selector:
+    matchLabels:
+      pkg.crossplane.io/provider: provider-iaas
+---
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  labels:
+    monitoring: crossplane
+    deployment: kubectl
+    release: prometheus
+  name: crossplane-monitoring
+  namespace: crossplane-system
+spec:
+  podMetricsEndpoints:
+  - port: metrics
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: crossplane
+...
